@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(116, 195, 231);
+            font-family: monospace;
+            /* justify-content: center;
+            align-items: center; */
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Welcome <span id="resultn"></span></p>
+    <p>your email is <span id="resultm"></span></p>
+    <p>your address is <span id="resultadd"></span></p>
+    <p>your age is <span id="resultage"></span></p>
+
+    <script>
+   
+    document.getElementById("resultn").innerHTML=localStorage.getItem("username");
+    document.getElementById("resultm").innerHTML=localStorage.getItem("useremail");
+    document.getElementById("resultadd").innerHTML=localStorage.getItem("useraddress");
+    document.getElementById("resultage").innerHTML=localStorage.getItem("userage");
+    </script>
+</body>
+</html>

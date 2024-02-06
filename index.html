@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(176, 116, 231);
+            font-family: monospace;
+            /* justify-content: center;
+            align-items: center; */
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="index2.html">
+    <label for="firstname">your first name</label>
+        <input type="text" id="firstname"><br>
+        <label for="email">youe email</label>
+        <input type="email" id="email"><br>
+        <label for="address">your address</label>
+        <input type="text" id="address"><br>
+        <label for="age">your age</label>
+        <input type="number" id="age"><br>
+        <input type="submit" value="Submit" onclick="getname(),getaddress(),getage(),getemail">
+    </form>
+   
+
+    <script>
+    function getname()
+    {
+        let Fname=document.getElementById("firstname").value;
+        localStorage.setItem("username",Fname);
+        return false;
+    }
+    function getaddress()
+    {
+        let Fadd=document.getElementById("adress").value;
+        localStorage.setItem("useraddress",Fadd);
+        return false;
+    }
+    function getemail()
+    {
+        let Fmaile=document.getElementById("email").value;
+        localStorage.setItem("useremail",Fmaile);
+        return false;
+    }
+    function getage()
+    {
+        let Fage=document.getElementById("age").value;
+        localStorage.setItem("userage",Fage);
+        return false;
+    }
+    </script>
+</body>
+</html>
